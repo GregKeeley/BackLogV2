@@ -14,6 +14,7 @@
 		C1AEF1AD23B690450081B821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AEF1AC23B690450081B821 /* Assets.xcassets */; };
 		C1AEF1B023B690450081B821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AEF1AE23B690450081B821 /* LaunchScreen.storyboard */; };
 		C1AEF1BB23B690450081B821 /* BackLogV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AEF1BA23B690450081B821 /* BackLogV2Tests.swift */; };
+		C1EDE00E23BA846A00EFD18F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE00D23BA846A00EFD18F /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C1AEF1B623B690450081B821 /* BackLogV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackLogV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AEF1BA23B690450081B821 /* BackLogV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackLogV2Tests.swift; sourceTree = "<group>"; };
 		C1AEF1BC23B690450081B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EDE00D23BA846A00EFD18F /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C1AEF1A223B690430081B821 /* BackLogV2 */ = {
 			isa = PBXGroup;
 			children = (
+				C1EDE00C23BA845800EFD18F /* Secrets */,
 				C1AEF1A323B690430081B821 /* AppDelegate.swift */,
 				C1AEF1A523B690430081B821 /* SceneDelegate.swift */,
 				C1AEF1A723B690430081B821 /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				C1AEF1BC23B690450081B821 /* Info.plist */,
 			);
 			path = BackLogV2Tests;
+			sourceTree = "<group>";
+		};
+		C1EDE00C23BA845800EFD18F /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDE00D23BA846A00EFD18F /* Secrets.swift */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1AEF1A823B690430081B821 /* ViewController.swift in Sources */,
+				C1EDE00E23BA846A00EFD18F /* Secrets.swift in Sources */,
 				C1AEF1A423B690430081B821 /* AppDelegate.swift in Sources */,
 				C1AEF1A623B690430081B821 /* SceneDelegate.swift in Sources */,
 			);
