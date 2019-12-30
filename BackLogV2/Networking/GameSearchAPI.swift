@@ -28,7 +28,7 @@ struct RecipeSearchAPI {
                     let searchResults = try JSONDecoder().decode([Game].self, from: data)
                     completion(.success(searchResults))
                 } catch {
-                    completion(.failure(.decodingError(error)))
+                    completion(.failure(.decodingError(error))) 
                 }
             }
         }
