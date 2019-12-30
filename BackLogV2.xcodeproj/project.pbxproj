@@ -15,6 +15,10 @@
 		C1AEF1B023B690450081B821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AEF1AE23B690450081B821 /* LaunchScreen.storyboard */; };
 		C1AEF1BB23B690450081B821 /* BackLogV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AEF1BA23B690450081B821 /* BackLogV2Tests.swift */; };
 		C1EDE01223BA866800EFD18F /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE01123BA866800EFD18F /* secrets.swift */; };
+		C1EDE01623BA89BA00EFD18F /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE01423BA89B900EFD18F /* AppError.swift */; };
+		C1EDE01723BA89BA00EFD18F /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE01523BA89B900EFD18F /* NetworkHelper.swift */; };
+		C1EDE01923BA8A9C00EFD18F /* GameSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE01823BA8A9C00EFD18F /* GameSearchAPI.swift */; };
+		C1EDE01C23BA8AB400EFD18F /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDE01B23BA8AB400EFD18F /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		C1AEF1BA23B690450081B821 /* BackLogV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackLogV2Tests.swift; sourceTree = "<group>"; };
 		C1AEF1BC23B690450081B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EDE01123BA866800EFD18F /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		C1EDE01423BA89B900EFD18F /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C1EDE01523BA89B900EFD18F /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		C1EDE01823BA8A9C00EFD18F /* GameSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSearchAPI.swift; sourceTree = "<group>"; };
+		C1EDE01B23BA8AB400EFD18F /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +89,8 @@
 		C1AEF1A223B690430081B821 /* BackLogV2 */ = {
 			isa = PBXGroup;
 			children = (
-				C1EDE01023BA865200EFD18F /* Secrets */,
+				C1EDE01A23BA8AA400EFD18F /* Model */,
+				C1EDE01323BA897F00EFD18F /* Networking */,
 				C1AEF1A323B690430081B821 /* AppDelegate.swift */,
 				C1AEF1A523B690430081B821 /* SceneDelegate.swift */,
 				C1AEF1A723B690430081B821 /* ViewController.swift */,
@@ -89,6 +98,7 @@
 				C1AEF1AC23B690450081B821 /* Assets.xcassets */,
 				C1AEF1AE23B690450081B821 /* LaunchScreen.storyboard */,
 				C1AEF1B123B690450081B821 /* Info.plist */,
+				C1EDE01023BA865200EFD18F /* Secrets */,
 			);
 			path = BackLogV2;
 			sourceTree = "<group>";
@@ -108,6 +118,24 @@
 				C1EDE01123BA866800EFD18F /* secrets.swift */,
 			);
 			path = Secrets;
+			sourceTree = "<group>";
+		};
+		C1EDE01323BA897F00EFD18F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDE01423BA89B900EFD18F /* AppError.swift */,
+				C1EDE01823BA8A9C00EFD18F /* GameSearchAPI.swift */,
+				C1EDE01523BA89B900EFD18F /* NetworkHelper.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C1EDE01A23BA8AA400EFD18F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDE01B23BA8AB400EFD18F /* GameModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +241,12 @@
 			files = (
 				C1AEF1A823B690430081B821 /* ViewController.swift in Sources */,
 				C1EDE01223BA866800EFD18F /* secrets.swift in Sources */,
+				C1EDE01623BA89BA00EFD18F /* AppError.swift in Sources */,
 				C1AEF1A423B690430081B821 /* AppDelegate.swift in Sources */,
+				C1EDE01723BA89BA00EFD18F /* NetworkHelper.swift in Sources */,
+				C1EDE01C23BA8AB400EFD18F /* GameModel.swift in Sources */,
 				C1AEF1A623B690430081B821 /* SceneDelegate.swift in Sources */,
+				C1EDE01923BA8A9C00EFD18F /* GameSearchAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
