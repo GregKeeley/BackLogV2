@@ -13,7 +13,7 @@ class AddGameViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var searchResults = [Game]()
+    var searchResults = [GameRAWG]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

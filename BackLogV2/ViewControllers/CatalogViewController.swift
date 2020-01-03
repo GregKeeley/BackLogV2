@@ -14,7 +14,7 @@ class CatalogViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var games = [Game]()
+    var games = [GameRAWG]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

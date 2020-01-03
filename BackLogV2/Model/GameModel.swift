@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct Game: Decodable {
+struct GameRAWG: Decodable {
     let name: String
     let released: String
+}
+
+struct GameIGDBSearchResults: Decodable {
+    let id: Int
+    let name: String
 }
