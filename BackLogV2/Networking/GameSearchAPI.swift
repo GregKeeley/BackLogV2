@@ -8,17 +8,14 @@
 
 import Foundation
 
-struct RecipeSearchAPI {
-    
-    static func searchGames(searchQuery: String, completion: @escaping (Result<[Game], AppError>) -> ()) {
-        let searchEndpoint = "https://api-v3.igdb.com/search/?user-key=\(SecretAPI.value)"
-        guard let url = URL(string: searchEndpoint) else {
-            completion(.failure(.badURL(searchEndpoint)))
+struct GameSearchAPI {
+    static func searchGames(for searchQuery: String, completion: @escaping (Result<[Game], AppError>) -> ()) {
+        let gameSearchEndpoint = "https://rawg-video-games-database.p.rapidapi.com/games/\(searchQuery)"
+        guard let url = URL(string: gameSearchEndpoint) else {
+            completion(.failure(.badURL(gameSearchEndpoint)))
             return
         }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        
+        let request = URLRequest(url: url)
         NetworkHelper.shared.performDataTask(with: request) { (result) in
             switch result {
             case .failure(let appError):
@@ -26,9 +23,10 @@ struct RecipeSearchAPI {
             case .success(let data):
                 do {
                     let searchResults = try JSONDecoder().decode([Game].self, from: data)
+                    
                     completion(.success(searchResults))
                 } catch {
-                    completion(.failure(.decodingError(error))) 
+                    
                 }
             }
         }
